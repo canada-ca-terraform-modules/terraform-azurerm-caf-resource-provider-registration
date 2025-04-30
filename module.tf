@@ -1,5 +1,5 @@
 resource "azurerm_resource_provider_registration" "rpr" {
-  name = "Microsoft.ContainerService"
+  name = var.name
 
   dynamic "feature" {
     for_each = var.features
