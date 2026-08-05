@@ -4,7 +4,7 @@ resource "azurerm_resource_provider_registration" "rpr" {
   dynamic "feature" {
     for_each = var.features
     content {
-      name = feature.key
+      name       = feature.key
       registered = feature.value.registered
     }
   }
