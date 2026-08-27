@@ -1,3 +1,4 @@
+# live-test workflow trigger anchor — see .github/workflows/live-test.yml paths filter
 terraform {
   required_version = ">= 1.9"
   required_providers {
